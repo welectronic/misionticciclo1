@@ -35,10 +35,10 @@ cantidadLeche = int(input("Introduzca la cantidad de leche: "))
 cantidadHuevos = int(input("Introduzca la cantidad de huevos: "))
 valorBillete = int(input("Introduzca el valor del billete: "))
 
-valorDevuelta = devuelta(valorBillete, precioTotal(cantidadPanes, cantidadLeche, cantidadHuevos))
+valorDevuelta = devuelta(valorBillete, precioTotal(0, cantidadLeche, cantidadHuevos))
 
 if valorDevuelta < 0:
-    print("Adeuda: ", math.abs(valorDevuelta))
+    print("Adeuda: ", abs(valorDevuelta))
 elif valorDevuelta == valorBillete:
     print("No adeuda nada")
 else:
