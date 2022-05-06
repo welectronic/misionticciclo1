@@ -15,7 +15,7 @@ cantidadHuevos:int = 0
 valorBillete:int = 0
 valorDevuelta:int = 0
 
-def precioTotal(cantidadPanes:int, cantidadLeche:int, cantidadHuevos:int):
+def precioTotal(cantidadPanes, cantidadLeche, cantidadHuevos):
     """
     Funcion que calcula el precio total de la compra
     """
@@ -39,6 +39,8 @@ valorDevuelta = devuelta(valorBillete, precioTotal(cantidadPanes, cantidadLeche,
 
 if valorDevuelta < 0:
     print("Adeuda: ", math.abs(valorDevuelta))
+elif valorDevuelta == valorBillete:
+    print("No adeuda nada")
 else:
     print("Devuelve: ", valorDevuelta)
 
