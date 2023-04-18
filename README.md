@@ -3,4 +3,6 @@
 ## titulo 2
 
 Ejercicios de práctica resueltos
-
+``` sql
+SELECT * FROM table
+```
